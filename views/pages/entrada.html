@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/style.css">
+  <title>Controle</title>
+</head>
+
+<body>
+
+  <div class="card">
+    <header>
+      <h1>Controle de entrada</h1>
+      <button class="btn btn-success"><a href="/saida">Saída</a></button>
+      <img class="porta-icon" src="/public/images/saida.png" alt="">
+    </header>
+
+    <main>
+      <form method="post" autocomplete="off">
+        <div class="title">
+          <h2>Cadastro de entrada de produto</h2>
+          <span>Informações gerais.</span>
+        </div>
+
+        <div class="card">
+          <div class="lineInput">
+            <label for="">Produto</label>
+            <input type="text" name="produto" id="produto" placeholder="Digite o nome do produto...">
+          </div>
+          <div class="lineInput">
+            <label for="">Peso</label>
+            <input type="text" name="peso" id="peso" placeholder="Digite o peso em Kg...">
+          </div>
+          <div class="lineInput">
+            <label for="">Qualidade</label>
+            <input type="text" name="qualidade" id="qualidade" placeholder="Digite a qualidade do produto...">
+          </div>
+          <div class="lineInput">
+            <label for="">Data de entrada</label>
+            <input type="text" name="data_entrada" id="data_entrada" placeholder="Digite a data de entrada...">
+          </div>
+          <div class="lineInput">
+            <label for="">Empresa</label>
+            <input type="text" name="empresa" id="empresa" placeholder="Digite o nome da empresa...">
+          </div>
+          <div class="lineInput">
+            <label for="">CNPJ da empresa</label>
+            <input type="text" name="cnpj" id="cnpj" placeholder="Digite o cnpj da empresa...">
+          </div>
+          <div class="lineInput">
+            <label for="">Placa do veículo</label>
+            <input type="text" name="placa" id="placa" placeholder="Digite a placa do veículo...">
+          </div>
+          <div class="lineInput">
+            <label for="">Nome do motorista</label>
+            <input type="text" name="motorista" id="motorista" placeholder="Digite o nome do motorista...">
+          </div>
+          <br>
+          <div class="clear"></div>
+          <div class="botoes-base">
+            <input class="botao-enviar" type="submit" value="Cadastrar">
+            <button class="botoes-paginas"><a href="/visualizarEntrada"> Vizualizar</a></button>
+            <button class="botoes-paginas"><a href="/atualizarEntrada">Atualizar</a></button>
+            <button class="botoes-paginas"><a href="/deletarEntrada">Deletar</a></button>
+          </div>
+        </div>
+      </form><!-- form -->
+    </main>
+  </div>
+</body>
+
+</html>

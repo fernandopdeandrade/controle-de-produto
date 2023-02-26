@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/style.css">
+  <title>Controle</title>
+</head>
+
+<body>
+
+  <div class="card">
+    <header>
+      <h1>Atualização de saída</h1>
+      <button class="btn btn-success"><a href="/saida">Saída</a></button>
+      <img class="porta-icon" src="/public/images/saida.png" alt="">
+    </header>
+
+    <main>
+      <% dados_saida.forEach(function(dados_saida) { %>
+        <form method="post" autocomplete="off">
+          <div class="title">
+            <br>
+            <br>
+            <br>
+            <h2>Atualização dos dados de saída</h2>
+            <br>
+            <span>Informações gerais.</span>
+          </div>
+
+          <div class="card">
+            <div class="lineInput">
+              <label for="">ID</label>
+              <input value="<%= dados_saida.id %>" name="id" id="id" type="text">
+            </div>
+            <div class="lineInput">
+              <label for="">Produto</label>
+              <input value="<%= dados_saida.produto %>" type="text" name="produto" id="produto">
+            </div>
+            <div class="lineInput">
+              <label for="">Peso</label>
+              <input value="<%= dados_saida.peso %>" type="text" name="peso" id="peso">
+            </div>
+            <div class="lineInput">
+              <label for="">Qualidade</label>
+              <input value="<%= dados_saida.qualidade %>" type="text" name="qualidade" id="qualidade">
+            </div>
+            <div class="lineInput">
+              <label for="">Data de saida</label>
+              <input value="<%= dados_saida.data_saida %>" type="text" name="data_saida" id="data_saida">
+            </div>
+            <div class="lineInput">
+              <label for="">Empresa</label>
+              <input value="<%= dados_saida.empresa %>" type="text" name="empresa" id="empresa">
+            </div>
+            <div class="lineInput">
+              <label for="">CNPJ da empresa</label>
+              <input value="<%= dados_saida.cnpj %>" type="text" name="cnpj" id="cnpj">
+            </div>
+            <div class="lineInput">
+              <label for="">Placa do veículo</label>
+              <input value="<%= dados_saida.placa %>" type="text" name="placa" id="placa">
+            </div>
+            <div class="lineInput">
+              <label for="">Nome do motorista</label>
+              <input value="<%= dados_saida.motorista %>" type="text" name="motorista" id="motorista">
+            </div>
+            <br>
+            <input class="botao-enviar" type="submit" value="Atualizar">
+          </div>
+        </form><!-- form -->
+        <% }) %>
+          <br>
+    </main>
+  </div>
+</body>
+
+</html>

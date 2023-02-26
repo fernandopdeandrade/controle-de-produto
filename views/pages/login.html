@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="/public/style.css">
+</head>
+
+<body>
+  <form method="post" class="form-login" autocomplete="off">
+    <div class="title">
+      <h1 style="text-align: center; margin-bottom: 30px;">Login</h1>
+      <div class="card">
+        <div class="lineInput">
+          <label for="">E-mail</label>
+          <input type="text" id="email">
+        </div>
+        <div class="lineInput">
+          <label for="">Password</label>
+          <input type="text" id="senha">
+        </div>
+        <input id="submit" class="botao-enviar-login" type="submit" value="login">
+      </div>
+    </div>
+  </form>
+
+  <script>
+    document.getElementById('submit').addEventListener('click', function (e) {
+      e.preventDefault();
+      var email = document.getElementById('email').value;
+      var senha = document.getElementById('senha').value;
+
+      if (email == '' || senha == '') {
+        alert('Preencha todos os campos!');
+        return;
+      } if (email != 'pupygreen@gmail.com' || senha != '123456') {
+        alert('Email ou senha incorretos!');
+      } if (email === 'pupygreen@gmail.com' && senha === '123456') {
+        alert('Login realizado com sucesso!');
+        window.location.href = 'http://localhost:3000/entrada';
+      }
+    });
+  </script>
+
+</body>
+
+</html>

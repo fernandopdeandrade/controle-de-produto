@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/style.css">
+  <title>Controle</title>
+</head>
+
+<body>
+
+  <div class="card">
+    <header>
+      <h1>Informações de saída</h1>
+      <button class="btn btn-success"><a href="/saida">Saída</a></button>
+      <img class="porta-icon" src="/public/images/saida.png" alt="">
+    </header>
+
+    <main>
+      <% dados_saida.forEach(function(dados_saida) { %>
+        <form>
+          <div class="title">
+            <br>
+            <h2>Visualização dos dados de saída</h2>
+            <br>
+            <span>Informações gerais.</span>
+          </div>
+
+          <div class="card">
+            <div class="lineInput">
+              <label for="">ID = <%= dados_saida.id %></label>
+            </div>
+            <div class="lineInput">
+              <label for="">Produto = <%= dados_saida.produto %></label>
+            </div>
+            <div class="lineInput">
+              <label for="">Peso = <%= dados_saida.peso%></label>
+            </div>
+            <div class="lineInput">
+              <label for="">Qualidade = <%= dados_saida.qualidade %></label>
+            </div>
+            <div class="lineInput">
+              <label for="">Data de saída = <%= dados_saida.data_saida %></label>
+            </div>
+            <div class="lineInput">
+              <label for="">Empresa = <%= dados_saida.empresa %></label>
+            </div>
+            <div class="lineInput">
+              <label for="">CNPJ da empresa = <%= dados_saida.cnpj %></label>
+            </div>
+            <div class="lineInput">
+              <label for="">Placa do veículo = <%= dados_saida.placa %></label>
+            </div>
+            <div class="lineInput">
+              <label for="">Nome do Motorista = <%= dados_saida.motorista %></label>
+            </div>
+            <br>
+          </div>
+        </form><!-- form -->
+        <% }); %>
+    </main>
+  </div>
+</body>
+
+</html>

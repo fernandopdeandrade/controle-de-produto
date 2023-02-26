@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #333;
+  background: #fff;
+}
+
+.clear {
+  clear: both;
+}
+
+.center {
+  text-align: center;
+}
+
+form.form-login {
+  width: 50%;
+  margin: 100px auto;
+  padding: 50px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input.botao-enviar-login {
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  background: rgb(63, 114, 59);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  color: white;
+  font-size: 20px;
+}
+
+input.botao-enviar-login:hover {
+  background: rgb(54, 150, 47);
+  color: white;
+  cursor: pointer;
+}
+
+header {
+  background-color: #4caf50;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+button.btn-success {
+  margin-top: 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: right;
+  margin-right: 6%;
+}
+
+button.btn-success a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+main {
+  padding: 30px 100px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.lineInput {
+display: grid;
+margin-bottom: 10px;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+  outline: none;
+}
+
+button {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+button:hover {
+  background-color: #22c528;
+  font-size: 15px;
+}
+
+input.botao-enviar {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  float: left;
+  transition: all ease 0.3s;
+  margin-top: -20px;
+}
+
+input.botao-enviar:hover {
+  background-color: #20c426;
+  font-size: 16px;
+}
+
+button.botoes-paginas {
+  width: 70px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 6px;
+  font-size: 12px;
+  border-radius: 5px;
+  float: right;
+  cursor: pointer;
+  transition: all ease 0.3s;
+  margin-right: 20px;
+  margin-top: -10px;
+}
+
+button.botoes-paginas a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+button.botoes-paginas:hover {
+  background-color: #20c426;
+  font-size: 12px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+table th {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+}
+
+.table-td-img1 {
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.table-td-img1:hover {
+  background-color : yellow;
+  height: 23px;
+  width: 23px;
+  transition-timing-function: ease-in-out;
+}
+ 
+.table-td-img2 {
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.table-td-img2:hover {
+  background-color: red;
+  height: 23px;
+  width: 23px;
+  transition-timing-function: ease-in-out;
+}
+
+img.porta-icon {
+  width: 40px;
+  height: 40px;
+  float: right;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+
+td.td-class {
+  background-color: #f2f2f2;
+  padding-left: 10px;
+}
+
+th.campo-acoes {
+  width: 70px;
+}
+
+th.campo-id {
+  width: 80px;
+}
+
+/* media screen */
+@media screen and (max-width: 1000px) {
+  main {
+    padding: 30px 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  main {
+    padding: 30px 10px;
+    font-size: 7px;
+  }
+  header h1 {
+    font-size: 15px;
+  }
+  img.porta-icon {
+    width: 20px;
+    height: 20px;
+    margin-top: 20px;
+    margin-right: 5px;
+  }
+  .title {
+    margin-top: 30px;
+  }
+  button.btn {
+    display: flex;
+    height: 4px;
+    justify-content: center;
+    align-items: center;
+  }
+  button.btn a {
+    font-size: 7px;
+  }
+  div.card {
+    padding: 20px 10px;
+  }
+  div.lineInput input {
+  font-size: 7px;
+  margin-bottom: 1px;
+  }
+  div.botoes-base {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  input.botao-enviar {
+    width: auto;
+    height: 25px;
+    font-size: 10px;
+  }
+  button.botoes-paginas {
+  width: auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  }
+  button.botoes-paginas a {
+  font-size: 8px;
+  float: right;
+  }
+}
+  
+
